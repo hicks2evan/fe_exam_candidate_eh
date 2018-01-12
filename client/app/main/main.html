@@ -6,9 +6,7 @@
 </header>
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <typeahead></typeahead>
-    </div>
-  </div>
+  <typeahead values="mainController.breeds" submit="mainController.addBreed(value)"></typeahead>
+  <p>{{mainController.selectedBreeds}}</p>
+  <p>{{mainController.check}}</p>
 </div>

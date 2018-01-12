@@ -5,32 +5,24 @@ import routing from './main.routes';
 export class MainController {
   $http;
 
-  awesomeThings = [];
-  newThing = '';
-
   /*@ngInject*/
-  constructor($http) {
-    this.$http = $http;
+  constructor($location) {
+    'ngInject';
+    this.$location = $location;
+    this.breeds = ['test1', 'test2', 'test3'];
+    this.selectedBreeds = [];
   }
 
-  $onInit() {
-    this.$http.get('/api/things')
-      .then(response => {
-        this.awesomeThings = response.data;
-      });
-  }
-
-  addThing() {
-    if(this.newThing) {
-      this.$http.post('/api/things', {
-        name: this.newThing
-      });
-      this.newThing = '';
+  addBreed(breed) {
+    if(this.selectedBreeds.includes(breed)) {
+      window.alert('Grr! You have already caught that breed!');
     }
-  }
-
-  deleteThing(thing) {
-    this.$http.delete(`/api/things/${thing._id}`);
+    else if(!this.breeds.includes(breed)) {
+      window.alert('Arf! That is not a dog breed we recognize!');
+    }
+    else {
+      this.selectedBreeds.push(breed);
+    }
   }
 }
 
@@ -38,6 +30,7 @@ export default angular.module('feExamCandidateEhApp.main', [ngRoute])
   .config(routing)
   .component('main', {
     template: require('./main.html'),
-    controller: MainController
+    controller: MainController,
+    controllerAs: 'mainController'
   })
   .name;
