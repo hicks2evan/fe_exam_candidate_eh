@@ -7,13 +7,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+<<<<<<< HEAD
       <a href="/" class="navbar-brand">web-projects</a>
+=======
+      <a href="/" class="navbar-brand">fe-exam-candidate-eh</a>
+>>>>>>> 59db39264133a46d6b40000f9ab9d87ec01f5a79
     </div>
     <div uib-collapse="$ctrl.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in $ctrl.menu" ng-class="{active: $ctrl.isActive(item.link)}">
             <a ng-href="{{item.link}}">{{item.title}}</a>
         </li>
+<<<<<<< HEAD
         <li ng-show="$ctrl.isStudent()" ng-class="{active: $ctrl.isActive('/student')}"><a href="/student">Student</a></li>
         <li ng-show="$ctrl.isTeacher()" ng-class="{active: $ctrl.isActive('/teacher')}"><a href="/teacher">Teacher</a></li>
         <li ng-show="$ctrl.isAdmin()" ng-class="{active: $ctrl.isActive('/admin')}"><a href="/admin">Admin</a></li>
@@ -25,6 +30,8 @@
         <li ng-show="$ctrl.isLoggedIn()"><p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p> </li>
         <li ng-show="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
         <li ng-show="$ctrl.isLoggedIn()"><a href="/logout">Logout</a></li>
+=======
+>>>>>>> 59db39264133a46d6b40000f9ab9d87ec01f5a79
       </ul>
     </div>
   </div>

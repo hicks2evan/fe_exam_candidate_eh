@@ -3,6 +3,10 @@ const ngRoute = require('angular-route');
 import routing from './main.routes';
 
 export class MainController {
+<<<<<<< HEAD
+=======
+  $http;
+>>>>>>> 59db39264133a46d6b40000f9ab9d87ec01f5a79
 
   awesomeThings = [];
   newThing = '';
@@ -33,7 +37,11 @@ export class MainController {
   }
 }
 
+<<<<<<< HEAD
 export default angular.module('webProjectsApp.main', [ngRoute])
+=======
+export default angular.module('feExamCandidateEhApp.main', [ngRoute])
+>>>>>>> 59db39264133a46d6b40000f9ab9d87ec01f5a79
   .config(routing)
   .component('main', {
     template: require('./main.html'),

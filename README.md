@@ -1,14 +1,28 @@
-# SCOIR Technical Interview for Front-End Engineers
-This repo contains an exercise intended for Front-End Engineers.
+# fe-exam-candidate-eh
 
-## Instructions
-1. Fork this repo.
-1. Using technology of your choice, complete [the assignment](./Assignment.md).
-1. Update this README with
-    * a `How-To` section containing any instructions needed to run/access your system.
-    * an `Assumptions` section containing documentation on any assumptions made while interpreting the requirements.
-1. Before the deadline, submit a pull request with your solution.
+This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.2.2.
 
-## Expectations
-1. Please take no more than 8 hours to work on this exercise. Complete as much as possible and then submit your solution.
-1. This exercise is meant to showcase how you work. With consideration to the time limit, do your best to treat it like a production system.
+## Getting Started
+
+### Prerequisites
+
+- [Git](https://git-scm.com/)
+- [Node.js and npm](nodejs.org) Node >= 4.x.x, npm >= 2.x.x
+- [Gulp](http://gulpjs.com/) (`npm install --global gulp`)
+- [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
+
+### Developing
+
+1. Run `npm install` to install server dependencies.
+
+2. Run `mongod` in a separate shell to keep an instance of the MongoDB Daemon running
+
+3. Run `gulp serve` to start the development server. It should automatically open the client in your browser when ready.
+
+## Build & development
+
+Run `gulp build` for building and `gulp serve` for preview.
+
+## Testing
+
+Running `npm test` will run the unit tests with karma.

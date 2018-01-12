@@ -73,6 +73,10 @@ export function Modal($rootScope, $uibModal) {
   };
 }
 
+<<<<<<< HEAD
 export default angular.module('webProjectsApp.Modal', [])
+=======
+export default angular.module('feExamCandidateEhApp.Modal', [])
+>>>>>>> 59db39264133a46d6b40000f9ab9d87ec01f5a79
   .factory('Modal', Modal)
   .name;
