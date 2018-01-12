@@ -1,7 +1,6 @@
 'use strict';
 
 import angular from 'angular';
-// import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookies';
 import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
@@ -15,21 +14,15 @@ import {
   routeConfig
 } from './app.config';
 
-import _Auth from '../components/auth/auth.module';
-import account from './account';
-import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
-import student from './student/student.component';
-import teacher from './teacher/teacher.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
 import './app.scss';
 
-angular.module('webProjectsApp', [ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, _Auth,
-  account, admin, 'validation.match', navbar, footer, main, constants, util, student, teacher
+angular.module('webProjectsApp', [ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, 'validation.match', navbar, footer, main, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
