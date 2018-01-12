@@ -28,11 +28,8 @@ describe('Component: MainComponent', function() {
   it('should attach a list of things to the controller', function() {
     mainComponent.$onInit();
     $httpBackend.flush();
-<<<<<<< HEAD
     expect(mainComponent.awesomeThings.length)
       .to.equal(4);
-=======
     mainComponent.awesomeThings.length.should.equal(4);
->>>>>>> 59db39264133a46d6b40000f9ab9d87ec01f5a79
   });
 });
