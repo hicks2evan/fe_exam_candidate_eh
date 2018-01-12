@@ -44,4 +44,5 @@
 /* Component styles are injected through gulp */
 /* inject:css */
 @import 'main/main.css';
+@import '../components/typeahead/typeahead.css';
 /* endinject */
