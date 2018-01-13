@@ -1,0 +1,17 @@
+#caughtBreedOuter {
+  padding: 4px;
+}
+
+#caughtBreedInner {
+  background: #333333;
+  height: 300px;
+  color: #fefefe;
+  text-align: center;
+  padding:10px;
+}
+
+.dogImage {
+  height: 225px;
+  width: 100%;
+}
+

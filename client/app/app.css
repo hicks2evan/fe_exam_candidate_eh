@@ -1,4 +1,4 @@
-@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/dist/css/bootstrap.css';
 /**
  * Bootstrap Fonts
  */
@@ -12,7 +12,7 @@
   url('/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-@import '../../node_modules/font-awesome/css/font-awesome.css';
+@import '~font-awesome/css/font-awesome.css';
 
 /**
  *Font Awesome Fonts
@@ -38,10 +38,6 @@
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
-
-window {
-  background-color: #1b6d85;
 }
 
 

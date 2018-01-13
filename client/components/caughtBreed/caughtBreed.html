@@ -1,4 +1,7 @@
-<div class='container-fluid caughtBreed'>
-  <image url="caughtBreedController.imageUrl"></image>
-  <p>{{caughtBreedController.breed}}</p>
+<div class='container-fluid col-lg-4 col-md-4 col-sm-4 col-xs-4' id='caughtBreedOuter'>
+  <div id='caughtBreedInner'>
+    <img class='dogImage' ng-src = "{{caughtBreedController.breedImage}}">
+    <p>{{caughtBreedController.breedImage}}</p>
+    <h3>{{caughtBreedController.breed}}</h3>
+  </div>
 </div>

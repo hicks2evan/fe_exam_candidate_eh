@@ -7,7 +7,6 @@ export class CaughtBreedComponent {
   constructor($location) {
     'ngInject';
     this.$location = $location;
-    this.imageUrl = 'test';
   }
 
 }
@@ -18,7 +17,8 @@ export default angular.module('directives.caughtBreed', [])
     controller: CaughtBreedComponent,
     controllerAs: 'caughtBreedController',
     bindings: {
-      breed: '='
+      breed: '=',
+      breedImage: '='
     }
   })
   .name;
