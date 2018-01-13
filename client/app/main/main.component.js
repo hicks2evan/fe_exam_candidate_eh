@@ -31,7 +31,7 @@ export class MainController {
     }
     else {
       var someBreed = this.breeds[Math.floor(Math.random() * Math.floor(this.breeds.length))];
-      while (this.selectedBreeds.includes(someBreed)) {
+      while(this.selectedBreeds.includes(someBreed)) {
         someBreed = this.breeds[Math.floor(Math.random() * Math.floor(this.breeds.length))];
       }
       this.addBreed(someBreed);

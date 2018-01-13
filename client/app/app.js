@@ -16,7 +16,7 @@ import {
 
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
-import breedOption from '../components/breedOption/breedOption.component';
+import breedOption from '../components/caughtBreed/caughtBreed.component';
 import typeahead from '../components/typeahead/typeahead.component';
 import main from './main/main.component';
 import constants from './app.constants';
