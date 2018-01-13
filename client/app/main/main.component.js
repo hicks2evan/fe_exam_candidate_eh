@@ -24,6 +24,19 @@ export class MainController {
       this.selectedBreeds.push(breed);
     }
   }
+
+  addRandomBreed() {
+    if(this.selectedBreeds.length === this.breeds.length) {
+      window.alert('Woof! You have already caught all of the breeds!');
+    }
+    else {
+      var someBreed = this.breeds[Math.floor(Math.random() * Math.floor(this.breeds.length))];
+      while (this.selectedBreeds.includes(someBreed)) {
+        someBreed = this.breeds[Math.floor(Math.random() * Math.floor(this.breeds.length))];
+      }
+      this.addBreed(someBreed);
+    }
+  }
 }
 
 export default angular.module('feExamCandidateEhApp.main', [ngRoute])

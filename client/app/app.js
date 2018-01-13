@@ -16,13 +16,14 @@ import {
 
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
+import breedOption from '../components/breedOption/breedOption.component';
 import typeahead from '../components/typeahead/typeahead.component';
 import main from './main/main.component';
 import constants from './app.constants';
 
 import './app.css';
 
-angular.module('feExamCandidateEhApp', [ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, navbar, footer, typeahead, main, constants
+angular.module('feExamCandidateEhApp', [ngCookies, ngResource, ngSanitize, ngRoute, uiBootstrap, navbar, footer, breedOption, typeahead, main, constants
 ])
   .config(routeConfig)
 angular.element(document)

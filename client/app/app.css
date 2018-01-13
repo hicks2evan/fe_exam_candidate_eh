@@ -40,9 +40,14 @@
   padding: 0.2em 0;
 }
 
+window {
+  background-color: #1b6d85;
+}
+
 
 /* Component styles are injected through gulp */
 /* inject:css */
 @import 'main/main.css';
+@import '../components/breedOption/breedOption.css';
 @import '../components/typeahead/typeahead.css';
 /* endinject */

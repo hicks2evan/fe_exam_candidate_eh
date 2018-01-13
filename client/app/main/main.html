@@ -5,8 +5,18 @@
   </div>
 </header>
 
-<div class="container">
+<div class="container" id="controlGroup">
   <typeahead values="mainController.breeds" submit="mainController.addBreed(value)"></typeahead>
-  <p>{{mainController.selectedBreeds}}</p>
-  <p>{{mainController.check}}</p>
+  <div class="row">
+    <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+      <button class="btn btn-default btn-block" ng-click="mainController.addRandomBreed()">Catch a random dog!</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div ng-repeat="aBreed in mainController.selectedBreeds">
+    <breed-option breed="aBreed"></breed-option>
+  </div>
+
 </div>
