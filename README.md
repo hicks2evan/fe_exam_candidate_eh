@@ -2,7 +2,7 @@
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.2.2.
 
-## Getting Started
+## How-To
 
 ### Prerequisites
 
@@ -22,4 +22,10 @@ This project was generated with the [Angular Full-Stack Generator](https://githu
 ## Build & development
 
 Run `gulp build` for building and `gulp serve` for preview.
+
+## Assumptions
+
+1. The dog API is not updating at a rate higher than the duration of an average visit.
+
+2. The application should be set up with infastructure to add more later.
 
