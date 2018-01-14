@@ -57,7 +57,7 @@ export class MainController {
       window.alert('Grr! You have already caught that breed!');
     }
     else {
-      this.selectedBreeds.push(breedObj);
+      this.selectedBreeds.unshift(breedObj);
       console.log(breedObj);
     }
   }
@@ -73,12 +73,14 @@ export class MainController {
   }
 
   addRandomBreed() {
-    if(this.selectedBreeds.length === this.breeds.length) {
+    if(this.selectedBreeds.length === this.breedObjects.length) {
       window.alert('Woof! You have already caught all of the breeds!');
     } else {
       var someBreed = this.breeds[Math.floor(Math.random() * Math.floor(this.breeds.length))];
-      while(this.selectedBreeds.includes(someBreed)) {
+      var breedObj = this.findBreedObject(someBreed);
+      while(this.selectedBreeds.includes(breedObj)) {
         someBreed = this.breeds[Math.floor(Math.random() * Math.floor(this.breeds.length))];
+        breedObj = this.findBreedObject(someBreed);
       }
       this.addBreed(someBreed);
     }
