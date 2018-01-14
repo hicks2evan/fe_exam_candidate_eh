@@ -40,15 +40,25 @@ export class MainController {
     });
   }
 
+  findBreedObject(breed) {
+    var result = this.breedObjects.filter(function(obj) {
+      return obj.name === breed;
+    });
+    console.log(result[0]);
+    return result[0];
+  }
+
   addBreed(breed) {
-    console.log(this.breedObjects[breed]);
-    if(this.selectedBreeds.includes(breed)) {
+    var breedObj = this.findBreedObject(breed);
+    if(!this.breeds.includes(breed)) {
+      window.alert('Arf! That is not a dog breed we recognize!');
+    }
+    else if(this.selectedBreeds.includes(breedObj)) {
       window.alert('Grr! You have already caught that breed!');
     }
-    else if(!this.breeds.includes(breed)) {
-      window.alert('Arf! That is not a dog breed we recognize!');
-    } else {
-      this.selectedBreeds.push(breed);
+    else {
+      this.selectedBreeds.push(breedObj);
+      console.log(breedObj);
     }
   }
 

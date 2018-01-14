@@ -1,7 +1,7 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Woof.</h1>
-    <p class="lead">This is going to be a dog catcher app!</p>
+    <p class="lead">This is a simple dog catcher app!</p>
   </div>
 </header>
 
@@ -15,8 +15,7 @@
 </div>
 
 <div class="container">
-  <div ng-repeat="aBreed in mainController.breedObjects">
-    <caught-breed breedImage="aBreed.image" breed="aBreed.name">
-    </caught-breed>
+  <div ng-repeat="aBreed in mainController.selectedBreeds">
+    <caught-breed breed="aBreed"></caught-breed>
   </div>
 </div>
