@@ -1,5 +1,8 @@
 <div class='container-fluid col-lg-4 col-md-4 col-sm-4 col-xs-4' id='caughtBreedOuter'>
   <div id='caughtBreedInner'>
+    <button type="button" class="close" aria-label="Close" ng-click="caughtBreedController.delete({value: caughtBreedController.breed})">
+      <span aria-hidden="true">&times;</span>
+    </button>
     <img class='dogImage' ng-src = "{{caughtBreedController.breed.image}}">
     <h3>{{caughtBreedController.breed.name}}</h3>
   </div>

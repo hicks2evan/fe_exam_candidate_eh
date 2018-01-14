@@ -3,7 +3,7 @@
 }
 
 #caughtBreedInner {
-  background: #333333;
+  background: #000000;
   height: 300px;
   color: #fefefe;
   text-align: center;
@@ -12,6 +12,6 @@
 
 .dogImage {
   height: 225px;
-  width: 100%;
+  width: 80%;
 }
 

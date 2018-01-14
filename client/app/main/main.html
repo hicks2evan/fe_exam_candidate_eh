@@ -1,6 +1,6 @@
 <header class="hero-unit" id="banner">
   <div class="container">
-    <h1>Woof.</h1>
+    <h1>Woof! Woof!</h1>
     <p class="lead">This is a simple dog catcher app!</p>
   </div>
 </header>
@@ -14,8 +14,17 @@
   </div>
 </div>
 
-<div class="container">
-  <div ng-repeat="aBreed in mainController.selectedBreeds">
-    <caught-breed breed="aBreed"></caught-breed>
+<div class="container selectedBreeds">
+  <div class = "row">
+    <div class = "col-lg-10 col-md-10 col-sm-10 col-xs-10"><h2>Caught Breeds:</h2></div>
+    <div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <button class="btn btn-danger pull-right" ng-click="mainController.deleteAllBreeds()">Delete All</button>
+    </div>
   </div>
+  <div ng-repeat="aBreed in mainController.selectedBreeds">
+    <caught-breed breed="aBreed" delete="mainController.deleteBreed(value)"></caught-breed>
+  </div>
+  <h3>{{mainController.selectedBreeds < 1 ? "You have not caught any breeds yet." : ""}} </h3>
+  <br>
+  <br>
 </div>

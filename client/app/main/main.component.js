@@ -62,6 +62,16 @@ export class MainController {
     }
   }
 
+  deleteBreed(breed) {
+    this.selectedBreeds = this.selectedBreeds.filter(function(obj) {
+      return obj !== breed;
+    });
+  }
+
+  deleteAllBreeds() {
+    this.selectedBreeds = [];
+  }
+
   addRandomBreed() {
     if(this.selectedBreeds.length === this.breeds.length) {
       window.alert('Woof! You have already caught all of the breeds!');

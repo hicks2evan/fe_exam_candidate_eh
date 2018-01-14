@@ -29,3 +29,8 @@
 .controlGroup {
   padding: 4px;
 }
+
+.selectedBreeds {
+  background: #FFFFFF;
+  padding: 4px;
+}
